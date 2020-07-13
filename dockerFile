@@ -8,4 +8,6 @@ RUN wegt https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.xz \
     && ln -s /usr/local/node-v10.16.0-linux-x64/bin/npx /usr/bin/npx
 ## install puppeteer 
 RUN npm config set puppeteer_download_host=https://npm.taobao.org/mirrors
+RUN mkdir -p /home/app
+WORKDIR /home/app
 RUN npm i puppeteer
