@@ -1,3 +1,4 @@
+FROM coderq/yarn-node10:latest
 ## install npm && puppeteer## 必要依赖 libXScrnSaver 
 RUN yum -y install libXScrnSaver
 ## install node 
